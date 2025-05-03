@@ -14,7 +14,7 @@ const Footer = () => {
                             width={5}
                         />
                         <p className="text-primary-50 text-xl font-bold tracking-tight">
-                            Noteflow</p>
+                            Yatharth</p>
                     </a>
                 </div>
                 <div className="grid grid-cols-[repeat(4,max-content)] gap-x-24">

@@ -14,7 +14,7 @@ const Navigation = () => {
           alt="NoteFlow Logo Icon"
           width={5}
         />
-        <p className="text-xl font-bold tracking-tight">Noteflow</p>
+        <p className="text-xl font-bold tracking-tight">Yatharth</p>
       </a>
       <ul className="flex items-center gap-x-8">
         {navigationLinks.map((link) => (
@@ -26,10 +26,10 @@ const Navigation = () => {
         ))}
       </ul>
       <div className="flex items-center gap-x-3">
-        <button 
+        {/* <button 
         className="border-primary-50 transition-properties hover:bg-primary-50 hover:text-primary-1300 box-border cursor-pointer rounded-full border-2 px-8 py-3.5 text-lg/8 font-normal">
           Login
-        </button>
+        </button> */}
         <button
           className="bg-primary-500 border-primary-500 text-primary-1300 primary-glow hover:border-primary-50 hover:bg-primary-50 primary-glow-hover transition-properties cursor-pointer rounded-full border-2 px-8 py-3.5 text-lg/8 font-normal"
           onClick={() => setActiveModal("sign-up")}
