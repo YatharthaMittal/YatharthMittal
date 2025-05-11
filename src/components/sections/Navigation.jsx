@@ -34,7 +34,7 @@ const Navigation = () => {
           className="bg-primary-500 border-primary-500 text-primary-1300 primary-glow hover:border-primary-50 hover:bg-primary-50 primary-glow-hover transition-properties cursor-pointer rounded-full border-2 px-8 py-3.5 text-lg/8 font-normal"
           onClick={() => setActiveModal("sign-up")}
         >
-          Get Started
+          Contact
         </button>
       </div>
 

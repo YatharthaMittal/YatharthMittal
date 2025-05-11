@@ -32,7 +32,7 @@ const navigationLinks = [
   },
   {
     id: 4,
-    link: "Community",
+    link: "Portfolio",
     href: "#",
   },
 ];
