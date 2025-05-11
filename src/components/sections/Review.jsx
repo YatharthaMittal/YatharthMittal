@@ -18,9 +18,9 @@ const Review = () => {
             <p className="text-primary-100 text-xl/loose font-light">
                 Trusted by{" "}
                 <span className="text-primary-500 font-bold tracking-tighter">
-                    12,653+{" "}
+                    5+{" "}
                 </span>
-                productivity junkies
+                Freelancer junkies
             </p>
         </section>
     )

@@ -17,7 +17,7 @@ const Footer = () => {
                             Yatharth</p>
                     </a>
                 </div>
-                <div className="grid grid-cols-[repeat(4,max-content)] gap-x-24">
+                {/* <div className="grid grid-cols-[repeat(4,max-content)] gap-x-24">
                     {footerCols.map((col) => (
                         <div key={col.id}>
                             <p className="text-primary-50 mb-8 text-xl/loose font-semibold">
@@ -35,7 +35,7 @@ const Footer = () => {
                             </ul>
                         </div>
                     ))}
-                </div>
+                </div> */}
             </div>
         </footer>
 

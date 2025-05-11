@@ -10,7 +10,7 @@ const Testimonials = () => {
             <div className="m-auto flex max-w-[90rem] flex-col items-center px-24 py-32">
                 <div className="mb-20 flex max-w-[51.625rem] flex-col items-center gap-y-6">
                     <p className="text-primary-1300 bg-primary-500 primary-glow w-min rounded-full px-4 py-2 text-base/8"> 
-                        Testimonials</p>
+                        Portfolio</p>
                     <h2 className="text-primary-50 text-center text-6xl/18 font-semibold tracking-tighter">
                         what our AI-powered <br />
                         notetakers have to say

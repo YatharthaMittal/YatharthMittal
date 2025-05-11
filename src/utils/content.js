@@ -20,11 +20,11 @@ const navigationLinks = [
     link: "Home",
     href: "#",
   },
-  {
-    id: 2,
-    link: "Pricing",
-    href: "#",
-  },
+  // {
+  //   id: 2,
+  //   link: "Pricing",
+  //   href: "#",
+  // },
   {
     id: 3,
     link: "About",

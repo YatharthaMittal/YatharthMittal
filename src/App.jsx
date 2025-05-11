@@ -35,10 +35,10 @@ function App() {
           <Review />
         </Header>
         <Main>
-          <Logos />
-          <Features />
+          {/* <Logos /> */}
+          {/* <Features /> */}
           {/* <FAQs /> */}
-          <Testimonials />
+          {/* <Testimonials /> */}
         </Main>
         <Footer />
 
