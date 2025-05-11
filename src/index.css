@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary-50: #ecfcfd;
+  --color-primary-75: #dafafa;
+  --color-primary-100: #c7f7f8;
+  --color-primary-150: #b4f5f5;
+  --color-primary-200: #a2f2f3;
+  --color-primary-250: #8feff1;
+  --color-primary-300: #7cedee;
+  --color-primary-350: #69eaec;
+  --color-primary-400: #57e8e9;
+  --color-primary-500: #44e5e7;
+  --color-primary-600: #3dced0;
+  --color-primary-700: #36b7b9;
+  --color-primary-800: #30a0a2;
+  --color-primary-900: #29898b;
+  --color-primary-1000: #227374;
+  --color-primary-1100: #1b5c5c;
+  --color-primary-1200: #144545;
+  --color-primary-1300: #0e2e2e;
+  --color-primary-1400: #071717;
+  --color-primary-1500: #061212;
+
+  --font-sans: "Poppins", sans-serif;
+
+  --color-primary-glow: rgba(68, 229, 231, 0.2);
+  --color-primary-50-glow: rgba(236, 252, 253, 0.2);
+}
+.bg-gradient-to-bottom {
+  @apply bg-[url('../src/assets/Noise.webp'),linear-gradient(to_bottom,var(--color-primary-1500),var(--color-primary-1300))] bg-repeat;
+}
+
+.bg-gradient-to-top {
+  @apply bg-[url('../src/assets/Noise.webp'),linear-gradient(to_top,var(--color-primary-1500),var(--color-primary-1300))] bg-repeat;
+}
+
+.transition-properties {
+  @apply transition-all duration-150;
+}
+
+.primary-glow {
+  @apply drop-shadow-[0_0px_25px_var(--color-primary-glow)];
+}
+
+.primary-glow-hover {
+  @apply hover:drop-shadow-[0_0px_25px_var(--color-primary-50-glow)];
+}
+:root {
+  --black: #0d0d0d;
+  --white: white;
+  --border: #1d1d1d;
+  --light-green: #9eeb21;
+  --grey: #141414;
+}
+
+/* Flow's cursor styling */
+body{cursor: none;}
+.cursor-wrapper {
+  z-index: 100000;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: fixed;
+  inset: 0;
+}
+
+.cursor-element {
+  background-color: var(--white);
+  border-radius: 50%;
+  width: 0.75rem;
+  height: 0.75rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s, height 0.3s, background-color 0.3s;
+}
+
+.cursor-element.hover {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--light-green);
+}
+.interactive {
+  cursor: none;
+}
