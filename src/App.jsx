@@ -23,30 +23,37 @@ import Modal from "./components/sections/Modal/Modal";
 import SignUpModal from "./components/sections/Modal/SignUpModal";
 import { ModalContextProvider } from "./contexts/ModalContext";
 
+// Mobile Menu
+import MobileMenu from "./components/sections/MobileMenu/MobileMenu";
+import { MobileMenuContextProvider } from "./contexts/MobileMenuContext";
+
 function App() {
   return (
     <ModalContextProvider>
-      <Pages>
-        <FluidCursor/>
-        <BlobCursor/>
-        <Header>
-          <Navigation />
-          <Hero />
-          <Review />
-        </Header>
-        <Main>
-          {/* <Logos /> */}
-          {/* <Features /> */}
-          {/* <FAQs /> */}
-          {/* <Testimonials /> */}
-        </Main>
-        <Footer />
+      <MobileMenuContextProvider>
+        <Pages>
+          {/* <FluidCursor />
+          <BlobCursor /> */}
+          <Header>
+            <Navigation />
+            <Hero />
+            <Review />
+          </Header>
+          <Main>
+            {/* <Logos /> */}
+            {/* <Features /> */}
+            {/* <FAQs /> */}
+            <Testimonials />
+          </Main>
+          <Footer />
 
-        <Modal modal="sign-up">
-          <SignUpModal />
-        </Modal>
-        
-      </Pages>
+          <Modal modal="sign-up">
+            <SignUpModal />
+          </Modal>
+
+          <MobileMenu />
+        </Pages>
+      </MobileMenuContextProvider>
     </ModalContextProvider>
   );
 }

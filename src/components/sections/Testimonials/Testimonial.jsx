@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import Star from "../../icons/Star";
 
-export default function Testimonal({ test }) {
+export default function Testimonial({ test }) {
   return (
     <motion.li
       className="bg-primary-1300 rounded-2xl px-8 py-10"
@@ -12,7 +12,7 @@ export default function Testimonal({ test }) {
         opacity: { duration: 0.75, ease: "easeInOut" },
       }}
     >
-      <div className="flex gap-x-1 pb-8">
+      {/* <div className="flex gap-x-1 pb-8">
         {Array.from({ length: test.rating }).map((_, i) => (
           <Star alt="Star Rating Icon" className="fill-primary-100" key={i} />
         ))}
@@ -22,7 +22,10 @@ export default function Testimonal({ test }) {
       </div>
       <p className="text-primary-50 pb-16 text-lg/loose font-light">
         {test.description}
-      </p>
+      </p> */}
+      <div className="pb-5">
+        <img src={test.src_2} style={{ width: "90rem" }}/>
+      </div>
       <div className="flex items-center gap-x-6">
         <img
           src={test.src}
